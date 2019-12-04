@@ -8,9 +8,9 @@ namespace PaySlipOOP
         private readonly IRead _read;
         private readonly ICalculation _calculator;
         
-        public PaySlip(IPrint printAndRead, ICalculation calculator,IRead read)
+        public PaySlip(IPrint print, ICalculation calculator,IRead read)
         {
-            _print = printAndRead;
+            _print = print;
             _read = read;
             _calculator = calculator;
         }
@@ -33,7 +33,7 @@ namespace PaySlipOOP
             _print.PrintInitMessage();
             
             int stringCounter=0;
-            while ( stringCounter !=6) 
+            while (stringCounter !=6) 
             {
                 _print.PrintMessage(initialMessage[stringCounter]);
                 UserInputs[stringCounter]=_read.ReadString();
