@@ -3,7 +3,7 @@ using System;
 namespace PaySlipOOP
 {
     public class Print : IPrint
-    { 
+    {
         public void PrintMessage(string message)
         {
             Console.WriteLine(message);
@@ -13,40 +13,20 @@ namespace PaySlipOOP
         {
             PrintMessage("Welcome to the payslip generator!");
         }
-        
-        public void PrintFinalMessage()
-        {
+
+        public void PrintOutcomes(string firstName, string lastName, string startDate, string endDate, int grossIncome,
+            int tax, int netIncome, double super)
+        { 
+            PrintMessage("\n"); 
+            PrintMessage("Your payslip has been generated:"); 
+            PrintMessage("\n");
+            PrintMessage($"Name: {firstName} {lastName}");
+            PrintMessage($"Pay Period : {startDate} - {endDate}");
+            PrintMessage($"Gross Income : {grossIncome}");
+            PrintMessage($"Income Tax: {tax}");
+            PrintMessage($"Net Income: {netIncome}");
+            PrintMessage($"Super: {super}");
             PrintMessage("Thank you for using MYOB!");
         }
-
-        public void PrintName(string firstName, string lastName)
-        { 
-            PrintMessage($"Name: {firstName} {lastName}");
-        }
-
-        public void PrintPayPeriod(string startDate, string endDate)
-        {
-            PrintMessage($"Pay Period : {startDate} - {endDate}");
-        }
-
-        public void PrintGrossIncome(int grossIncome)
-        {
-            PrintMessage($"Gross Income : {grossIncome}");
-        }
-
-        public void PrintIncomeTax(int tax)
-        {
-            PrintMessage($"Income Tax: {tax}");
-        }
-
-        public void PrintNetIncome(int netIncome)
-        {
-            PrintMessage($"Net Income: {netIncome}");
-        }
-
-        public void PrintSuper(double super)
-        {
-            PrintMessage($"Super: {super}");
-        }
     }
-}
+}  

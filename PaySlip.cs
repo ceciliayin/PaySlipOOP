@@ -17,12 +17,12 @@ namespace PaySlipOOP
 
         private string[] UserInputs = new string[6]{".",".",".",".",".","."};
         
-        string FirstName;
-        string LastName;
-        int AnnualSalary;
-        int SuperRate;
-        string StartDate;
-        string EndDate;
+        private string _firstName;
+        private string _lastName;
+        private int _annualSalary;
+        private int _superRate;
+        private string _startDate;
+        private string _endDate;
         
         public void PaySlipCalculator()
         {
@@ -46,31 +46,21 @@ namespace PaySlipOOP
 
         private void GetUserInputs()
         {
-            FirstName = UserInputs[0];
-            LastName= UserInputs[1];
-            AnnualSalary = Convert.ToInt32(UserInputs[2]);
-            SuperRate = Convert.ToInt32(UserInputs[3]);
-            StartDate = UserInputs[4];
-            EndDate = UserInputs[5];
+            _firstName = UserInputs[0];
+            _lastName= UserInputs[1];
+            _annualSalary = Convert.ToInt32(UserInputs[2]);
+            _superRate = Convert.ToInt32(UserInputs[3]);
+            _startDate = UserInputs[4];
+            _endDate = UserInputs[5];
         }
         private void GetOutcomes()
         {    
-            int grossIncome=_calculator.CalculateGrossIncome(AnnualSalary);
-            int tax=_calculator.CalculateIncomeTax(AnnualSalary);
+            int grossIncome=_calculator.CalculateGrossIncome(_annualSalary);
+            int tax=_calculator.CalculateIncomeTax(_annualSalary);
             int netIncome=_calculator.CalculateNetIncome(grossIncome,tax);
-            double super = _calculator.CalculateSuper(grossIncome,SuperRate);
+            double super = _calculator.CalculateSuper(grossIncome,_superRate);
             
-            _print.PrintMessage("\n");
-            _print.PrintMessage("Your payslip has been generated:");
-            _print.PrintMessage("\n");
-            _print.PrintName(FirstName,LastName);
-            _print.PrintPayPeriod(StartDate,EndDate);
-            _print.PrintGrossIncome(grossIncome);
-            _print.PrintIncomeTax(tax);
-            _print.PrintNetIncome(netIncome);
-            _print.PrintSuper(super);
-            _print.PrintMessage("\n");
-            _print.PrintFinalMessage();
+            _print.PrintOutcomes(_firstName,_lastName,_startDate, _endDate, grossIncome, tax, netIncome, super);
         }
     }
 }
