@@ -1,0 +1,11 @@
+/Users/cecilia.yin/RiderProjects/PaySlipOOP/PaySlipOOP/bin/Debug/netcoreapp3.0/PaySlipOOP
+/Users/cecilia.yin/RiderProjects/PaySlipOOP/PaySlipOOP/bin/Debug/netcoreapp3.0/PaySlipOOP.deps.json
+/Users/cecilia.yin/RiderProjects/PaySlipOOP/PaySlipOOP/bin/Debug/netcoreapp3.0/PaySlipOOP.runtimeconfig.json
+/Users/cecilia.yin/RiderProjects/PaySlipOOP/PaySlipOOP/bin/Debug/netcoreapp3.0/PaySlipOOP.runtimeconfig.dev.json
+/Users/cecilia.yin/RiderProjects/PaySlipOOP/PaySlipOOP/bin/Debug/netcoreapp3.0/PaySlipOOP.dll
+/Users/cecilia.yin/RiderProjects/PaySlipOOP/PaySlipOOP/bin/Debug/netcoreapp3.0/PaySlipOOP.pdb
+/Users/cecilia.yin/RiderProjects/PaySlipOOP/PaySlipOOP/obj/Debug/netcoreapp3.0/PaySlipOOP.csprojAssemblyReference.cache
+/Users/cecilia.yin/RiderProjects/PaySlipOOP/PaySlipOOP/obj/Debug/netcoreapp3.0/PaySlipOOP.AssemblyInfoInputs.cache
+/Users/cecilia.yin/RiderProjects/PaySlipOOP/PaySlipOOP/obj/Debug/netcoreapp3.0/PaySlipOOP.AssemblyInfo.cs
+/Users/cecilia.yin/RiderProjects/PaySlipOOP/PaySlipOOP/obj/Debug/netcoreapp3.0/PaySlipOOP.dll
+/Users/cecilia.yin/RiderProjects/PaySlipOOP/PaySlipOOP/obj/Debug/netcoreapp3.0/PaySlipOOP.pdb
